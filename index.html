@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <header>
+            <nav>
+                <ul>
+                    <header>
+                        <img src="flipkart.png" alt="Flipkart Logo" width="150" height="90">
+                    </header>
+                    <h2>
+                        <div id="navbar">  <a href="#home">Home</a>
+                            <a href="#about-us">About Us</a>   
+                            <a href="#services">Services</a>   
+                            <a href="#multimedia">Multimedia</a>   
+                            <a href="#contact">Contact Us</a>   
+                            </div>
+                  
+      
+                    </h2>
+                </ul>
+            </nav>
+        </header>
+    </center>
+
+    <main>
+        <center>
+        <section id="home">
+            <img src="./FLIPKART (2).png" alt="Home Image" width="70%" height="100%" style="display: block;">
+        </section>
+        </center>
+        <section id="about-us" class="about-section">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="./flipkart4.png" alt="About Flipkart">
+                </div>
+                <div class="about-text">
+                    <h1>About Us</h1>
+                    <p>Flipkart is one of India's leading e-commerce platforms. We offer a diverse range of products including electronics, fashion, home essentials, and more. Our mission is to provide customers with a seamless shopping experience through our user-friendly website and efficient delivery service.</p>
+                    <details>
+                        <summary>Read More</summary>
+                        <p>We leverage advanced technology and data analytics to provide personalized shopping recommendations and a secure online shopping environment. At Flipkart, we are committed to innovation and customer satisfaction.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+        
+        <section id="services">
+            
+            <h2>Services</h2>
+            <table>
+                <tr>
+                    <td>
+                        <img src="./electronics.png" alt="Electronics" width="170">
+                    </td>
+                    <td>
+                        <h3>Electronics</h3>
+                        <p>Wide range of electronics from top brands.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="./fashion.png" alt="Fashion" width="170">
+                    </td>
+                    <td>
+                        <h3>Fashion</h3>
+                        <p>Latest fashion trends and accessories.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="./home.png" alt="Home & Furniture" width="170">
+                    </td>
+                    <td>
+                        <h3>Home & Furniture</h3>
+                        <p>Quality furniture and home decor items.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="./books.png" alt="Books & More" width="170">
+                    </td>
+                    <td>
+                        <h3>Books & More</h3>
+                        <p>A vast collection of books and more.</p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="multimedia">
+            <h2>Multimedia</h2>
+            <audio controls id ="audio">
+                <source src="./Running It Down - Everet Almond.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+                
+            </audio>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VyK0jjMmojU?si=n55drPuMj-UH3lCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+        </section>
+    </main>
+
+    <section id="company-details" class="company-details">
+        <h2>Company Details</h2>
+        <table border="7">
+            <tr>
+                <th>Detail</th>
+                <th>Information</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>Flipkart Private Ltd.</td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>123 Main St, Anytown, USA</td>
+            </tr>
+            <tr>
+                <td>Contact</td>
+                <td>(123) 456-7890</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>info@flipkart.com</td>
+            </tr>
+            <tr>
+                <td>Website</td>
+                <td><a href="https://www.flipkart.com">www.flipkart.com</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <center>
+        <section id="contact">
+            <footer>
+                <h3>Contact Us</h3>
+                <h3><mark>Follow us on social media:</mark></h3>
+                <pre><a href="https://www.facebook.com/flipkart"><img src="./Facebook.png"  width="30"></a> <a href="https://twitter.com/flipkart"><img src="./Twitter.png"  width="30"></a> <a href="https://www.linkedin.com/company/flipkart"><img src="./LinkedIn.png"  width="30"></a></pre>
+                <p>&copy; 2024 Flipkart</p>
+            </footer>
+        </section>
+    </center>
+    
+    <script>
+        window.addEventListener('load', () => {
+        registerSW();
+        });
+    
+        // Register the Service Worker
+        async function registerSW() {
+        if ('serviceWorker' in navigator) {
+            try {
+            await navigator
+                    .serviceWorker
+                    .register('serviceworker.js');
+            }
+            catch (e) {
+            console.log('SW registration failed');
+            }
+        }
+        }
+        
+
+    </script>
+        <script src="index.js"></script>
+
+</body>
+</html>
